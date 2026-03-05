@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 center-align">
+        <div class="card-panel">
+            <i class="material-icons large">error</i>
+            <h4>500 - Server Error</h4>
+            <p>Something went wrong on our end. Please try again later.</p>
+            <a href="{{ url_for('home') }}" class="btn waves-effect waves-light blue darken-1">
+                <i class="material-icons left">refresh</i>
+                Try Again
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
